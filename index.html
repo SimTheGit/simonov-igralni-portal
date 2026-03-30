@@ -1,67 +1,103 @@
-<div id="header">
-				
-									<form action="/web/20150907040004/http://www.igre123.com/action/search_Base/RedirectToSearch" method="get">
-					<input type="hidden" name="SearchType" value="games">
-					<input type="text" name="q" id="txtSearch" class="query txtSearchDefault" value="Išči po igrah, forumu, profilih...">
-					<input type="submit" class="ArrowButton" id="btnSearch" value="išči">
-					</form>
-								
-				<a href="/web/20150907040004/http://www.igre123.com/" title="igre" class="logo"></a>
-				<div id="RightCircle"></div>
-		
-								<ul id="HeaderRightTop" class="Menu">
-										<li><a href="#fb-login" id="FbLoginLink" rel="nofollow">facebook prijava</a></li>
-					<li class="MenuSeperator"></li>
-					<li><a class="aux" href="/web/20150907040004/http://www.igre123.com/prijava">prijava</a></li>
-					<li class="MenuSeperator"></li>
-					<li><a class="aux" href="/web/20150907040004/http://www.igre123.com/registracija">postani član</a></li>
-									</ul>
-				<ul id="HeaderMenu" class="Menu">
-											<li><a href="/web/20150907040004/http://www.igre123.com/" title="igre" class="SelectedMenuItem">igre</a></li>
-						<li class="MenuSeperator"></li>
-										
-											<li><a href="/web/20150907040004/http://www.igre123.com/chat" title="chat uporabnikov">chat</a></li>
-					
-											   							<li class="MenuSeperator"></li>
-												<li><a href="/web/20150907040004/http://www.igre123.com/forum/" title="forum">forum</a></li>
-										
-                    						<li class="MenuSeperator"></li>
-                    					<li><a href="/web/20150907040004/http://www.igre123.com/123" title="123">123</a></li>
-				</ul>
-				
-								<ul id="MainMenuNarrow" class="Menu">
-					<li><a href="/web/20150907040004/http://www.igre123.com/" title="nove igre" class="SelectedMenuItem">nove</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/puzzle-igre/" title="puzzle igre">puzzle</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/arkadne-igre/" title="arkadne igre">arkadne igre</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/miselne-igre/" title="miselne igre">miselne igre</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/strelske-igre/" title="strelske igre">strelske</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/zabavne-igre/" title="zabavne igre">zabavne</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/sportne-igre/" title="športne igre">športne</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/avtomobilske-igre/" title="avtomobilske igre">avto</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/avanture-igre/" title="avanture">avanture</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/namizne-igre/" title="namizne igre">namizne</a></li>
-										<li class="MenuSeperator"></li>
-					<li><a href="/web/20150907040004/http://www.igre123.com/otroske-igre/" title="otroške igre">otroške igre</a></li>
-									</ul>
-				
-								<div id="MenuWithScores">
-					<a href="/web/20150907040004/http://www.igre123.com/igre-z-lestvicami" title="Naj igre z lestvico" id="MenuTrophyIcon"></a>
-				</div>
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <title>IgreABC - Brezplačne Flash & Shockwave igre</title>
+  <style>
+    body { 
+      font-family: Arial, Helvetica, sans-serif; 
+      margin: 0; 
+      background: #003366; /* old blue-ish background */
+      color: #fff; 
+    }
+    header { 
+      background: linear-gradient(#ffcc00, #ff9900); 
+      color: #000; 
+      text-align: center; 
+      padding: 15px; 
+    }
+    nav { 
+      background: #222; 
+      padding: 10px; 
+      text-align: center; 
+    }
+    nav a { 
+      color: #ffcc00; 
+      margin: 0 15px; 
+      text-decoration: none; 
+    }
+    .container { 
+      max-width: 1200px; 
+      margin: 20px auto; 
+      padding: 0 20px; 
+      display: flex; 
+      gap: 20px; 
+    }
+    .main { flex: 3; }
+    .sidebar { flex: 1; background: #222; padding: 15px; border-radius: 8px; }
+    .game-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+      gap: 15px; 
+    }
+    .game-card { 
+      background: #111; 
+      border-radius: 8px; 
+      overflow: hidden; 
+      text-align: center; 
+    }
+    .game-card img { width: 100%; height: auto; }
+    .game-card h3 { margin: 8px 0; font-size: 1em; }
+    footer { 
+      text-align: center; 
+      padding: 20px; 
+      background: #111; 
+      font-size: 0.9em; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="margin:0; font-size:2.5em;">IgreABC</h1>
+    <p>Nostalgija Flash & Shockwave iger • 2012–2015 vibe</p>
+  </header>
 
-				<div id="MenuWithMedals">
-					<a href="/web/20150907040004/http://www.igre123.com/igre-z-medaljami" title="Naj igre z medaljami" id="MenuMedalsIcon"></a>
-				</div>				
-								
-				
-												
-														
-			</div>
+  <nav>
+    <a href="#">Domov</a>
+    <a href="#">Flash igre</a>
+    <a href="#">Shockwave igre</a>
+    <a href="#">Kategorije</a>
+    <a href="#">Najbolj priljubljene</a>
+  </nav>
+
+  <div class="container">
+    <div class="main">
+      <h2>Priljubljene igre</h2>
+      <div class="game-grid">
+        <!-- Add your game cards here -->
+        <div class="game-card">
+          <a href="games/ultimate-sonic.html">
+            <img src="thumbnails/sonic.jpg" alt="Ultimate Sonic">
+            <h3>Ultimate Sonic Flash</h3>
+          </a>
+        </div>
+        <!-- Repeat for more games, including Street Sesh etc. -->
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h3>Kategorije</h3>
+      <ul>
+        <li><a href="#">Akcijske</a></li>
+        <li><a href="#">Športne</a></li>
+        <li><a href="#">Pustolovske</a></li>
+        <!-- Add more -->
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>IgreABC je neodvisna nostalgična zbirka • Igre poganja Ruffle & DirPlayer • Shranjevanje napredka deluje v brskalniku</p>
+  </footer>
+</body>
+</html>
