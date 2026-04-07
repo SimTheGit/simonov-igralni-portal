@@ -89,15 +89,21 @@ header p {
 }
 
 .game-card {
+  outline: none;
+  color: #0072bc;
+  font-weight: bold;
+  text-decoration: none;
   background: #bac7cd;
   border-radius: 5;
   overflow: hidden;
   text-align: center;
-  transition: background 0.25s ease;
+  transition: background 0s ease;
 }
 
 .game-card:hover {
   background: #d2dfe5;
+  color: #155f8f;
+  text-decoration: underline
 }
 
 .game-card img {
