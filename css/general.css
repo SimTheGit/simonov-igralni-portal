@@ -41,18 +41,18 @@ header p {
 
 .game-card {
   background: #1f1f1f;
-  border-radius: 0;           /* sharp corners as you requested */
+  border-radius: 5;
   overflow: hidden;
   text-align: center;
   transition: background 0.25s ease;
 }
 
 .game-card:hover {
-  background: #2a2a2a;        /* only lightens, no pop-up */
+  background: #d2dfe5;
 }
 
 .game-card img {
-  width: 100%;
+  width: 150;
   height: auto;
   display: block;
 }
