@@ -94,7 +94,7 @@ header p {
   overflow: hidden;
   text-align: center;
   transition: background 0s ease;
-  padding: 5px; 
+  padding: 4px; 
 }
 
 .game-card:hover {
