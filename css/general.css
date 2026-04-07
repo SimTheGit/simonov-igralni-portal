@@ -201,10 +201,12 @@ nav a:hover {
  }
 
 
+
 footer {
     text-align: center;
-    padding: 25px;
-    background: #111;
-    font-size: 0.9em;
-    margin-top: 40px;
+    color: #404041;
+    padding: 5px;
+    background: #ffffff;
+    font-size: 12px;
+    margin: 0px 0px 20px;
 }
