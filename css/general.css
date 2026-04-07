@@ -82,17 +82,13 @@ header p {
 .game-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 18px;
+  gap: 0px;
   margin: 30px auto;
   max-width: 1250px;
   padding: 0 20px;
 }
 
 .game-card {
-  outline: none;
-  color: #0072bc;
-  font-weight: bold;
-  text-decoration: none;
   background: #bac7cd;
   border-radius: 5;
   overflow: hidden;
@@ -115,7 +111,10 @@ header p {
 .game-card h3 {
   margin: 10px 8px 6px 8px;
   font-size: 1.02em;
-  color: #ffcc00;
+  color: #0072bc;
+  outline: none;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .game-desc {
