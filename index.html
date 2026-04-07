@@ -66,23 +66,22 @@
         </div>
       </div>
     <script>
-    // Load Header
-    fetch('../header.html')
+
+  <!-- Placeholder for Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Load Header and Footer -->
+  <script>
+    fetch('header.html')
       .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      })
+      .then(data => document.getElementById('header-placeholder').innerHTML = data)
       .catch(err => console.error('Error loading header:', err));
 
-    // Load Footer
-    fetch('../footer.html')
+    fetch('footer.html')
       .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data)
       .catch(err => console.error('Error loading footer:', err));
   </script>
-    </div>
-  
+
 </body>
 </html>
