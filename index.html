@@ -7,24 +7,6 @@
 
 </head>
 <body>
-  <header>
-    <h1 style="margin:0; font-size:2.5em;">Simonov igralni portal</h1>
-    <p>Potovanje po 2000. in 2010. letih</p>
-  </header>
-
-  <nav>
-    <a href="../index.html">Domača stran</a>
-    <a href="puzzle">Puzzle</a>
-    <a href="arkadne">Arkadne</a>
-    <a href="miselne">Miselne igre</a>
-    <a href="strelske">Strelske</a>
-    <a href="zabavne">Zabavne</a>
-    <a href="športne">Športne</a>
-    <a href="avto">Avto</a>
-    <a href="avanture">Avanture</a>
-    <a href="namizne">Namizne</a>
-    <a href="otroške">Otroške</a>
-  </nav>
 
   <div class="sidebar">
   <h3>Kategorije</h3>
@@ -85,11 +67,23 @@
       </div>
     </div>
 
-    
-  </div>
-
-  <footer>
-    <p>Simonov igralni portal 2026 • Igre poganja Ruffle & DirPlayer • Lahko vsebuje sledove glutena</p>
-  </footer>
 </body>
+ <!-- Load Header and Footer -->
+  <script>
+    // Load Header
+    fetch('../header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Error loading header:', err));
+
+    // Load Footer
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Error loading footer:', err));
+  </script>
 </html>
