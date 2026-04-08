@@ -200,53 +200,6 @@ nav a:hover {
       top: 0px;
  }
 
-.IndexTopListHeader {
-    width: 144px;
-    height: 17px;
-    padding: 9px 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    color: #fff;
-    font-size: 14px;
-    background-repeat: no-repeat
-}
-
-#IndexTopListHeaderWithScores {
-    background-color: #ee3c23;
-    position: relative
-}
-
-#IndexTopListHeaderWithScores:after {
-    content: "";
-    position: absolute;
-    right: 11px;
-    top: 8px;
-    background-image: url("/web/20150816162109im_/http://s.igre123.com/sys/sprites_v7.png");
-    _background-repeat: no-repeat;
-    _overflow: hidden;
-    background-position: 0 -75px;
-    width: 18px;
-    height: 18px
-}
-
-#IndexTopListHeaderThreads {
-    background-color: #0072bc;
-    position: relative
-}
-
-#IndexTopListHeaderThreads:after {
-    content: "";
-    position: absolute;
-    right: 7px;
-    top: 8px;
-    background-image: url("/web/20150816162109im_/http://s.igre123.com/sys/sprites_v7.png");
-    _background-repeat: no-repeat;
-    _overflow: hidden;
-    background-position: 0 -133px;
-    width: 17px;
-    height: 20px
-}
-
 #sidebar ol,#sidebar ul {
     width: 164px;
     background: #fff;
