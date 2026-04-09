@@ -14,8 +14,9 @@ body {
 header {
     background-image: url('igre2.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-position: top center;
+    background-size: contain;
+    background-attachment: scroll;
     color: #000;
     text-align: center;
     padding: 25px 20px;
