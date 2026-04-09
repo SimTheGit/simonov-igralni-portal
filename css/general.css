@@ -1,208 +1,268 @@
-/* =============================================
-   Simonov igralni portal - general.css
-   ============================================= */
-
-body {
-    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+#games {
+    clear: both;
     background: #bac7cd;
-    color: #000;
-    line-height: 1.5;
+    overflow: hidden;
+    padding: 5px 5px 5px 6px;
+    _height: 1%
 }
 
-header {
-    background-image: url('igre2.png');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    background-attachment: scroll;
-    min-height: 184px;
-    color: #000;
+#games li {
+    float: left;
+    width: 154px;
+    height: 171px;
     text-align: center;
-    padding: 25px 20px;
-}
-
-header h1 {
-    margin: 0 auto;
-    font-size: 2.8em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-header p {
-    margin: 8px 0 0 0;
-    font-size: 1.1em;
-}
-
-.Menu {
-    display: flex;
-    justify-content: center;        /* This centers the menu */
-    flex-wrap: wrap;  
-    border-radius: 5px;
-    height: 34px;
-    width: 898px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #fff;
-    font-weight: bold;
-    font-size: 14px
-}
-
-.Menu li {
+    padding: 3px;
     list-style: none;
-    text-align: center;
-    padding-top: 5px;
-    _width: 80px
+    margin: 9px 1px 0 0;
+    _height: 180px
 }
 
-.Menu li a {
-    display: block;
-    height: 21px;
-    color: #404041;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 3px;
+#games li:hover {
+    background: #ccdbe1
+}
+
+#games li:hover a {
+    text-decoration: underline
+}
+
+#games li a {
+    color: #0072bc;
     text-decoration: none
 }
 
-.Menu li a:hover,.Menu li a.SelectedMenuItem {
+#games li h2 {
+    font-size: 14px;
+    font-weight: bold
+}
+
+#games li p {
+    font-size: 10px
+}
+
+#games li a img {
+    border: 1px solid #fff
+}
+
+.GameWithScoresContainer {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 100px;
+    margin-bottom: 7px
+}
+
+.GameWithScores {
+    background-image: url("sprites_v1.png");
+    _background-repeat: no-repeat;
+    _overflow: hidden;
+    background-position: -248px 0;
+    position: absolute;
+    right: -2px;
+    top: 0px;
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    background-origin: content-box
+}
+
+#pager {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #889ba5;
+    height: 32px;
+    padding-top: 8px;
+    margin: 0 auto;
+    text-align: center
+}
+
+#pager a {
+    _float: left
+}
+
+#pager img {
+    border: 0
+}
+
+#pager ul {
+    display: inline-block;
+    _float: left;
+    _padding-left: 10px
+}
+
+#pager ul li {
+    float: left;
+    list-style: none;
+    height: 23px;
+    margin-right: 3px
+}
+
+#pager ul li a {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: #e7eff1
-}
-
-.Menu li.MenuSeperator {
-    border-right: 1px solid #a6ce39;
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 8px;
-    margin-top: 11px;
-    _width: 5px
-}
-
-/* ==================== GAME CARDS (Homepage) ==================== */
-.game-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 0px;
-  margin: 30px auto;
-  max-width: 800px;
-  padding: 0 20px;
-}
-
-.game-card {
-  background: #bac7cd;
-  border-radius: 5px;
-  overflow: hidden;
-  text-align: center;
-  transition: background 0s ease;
-  padding: 3px 4px 11px 4px;
-  box-sizing: border-box;
-}
-
-.game-card:hover {
-  background: #d2dfe5;
-  color: #155f8f;
-  text-decoration: underline
-}
-
-.game-card img {
-  width: 150px;
-  height: 100px;
-  border-radius: 5px;
-  border: 1px solid #ffffff; 
-  display: block;
-  margin: 0 auto;
-}
-
-.game-card h3 {
-  margin: 10px 8px 6px 8px;
-  font-size: 1.02em;
-  color: #0072bc;
-  outline: none;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.game-desc {
-  margin: 0 8px 12px 8px;
-  font-size: 10px;
-  color: #000;
-  line-height: 1.45;
-}
-
-/* ==================== RELATED GAMES SECTION ==================== */
-.related-section {
-  margin: 60px auto 40px auto;
-  max-width: 1000px;
-  padding: 0 20px;
-}
-
-.related-section h2 {
-  color: #ffcc00;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.related-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 18px;
-}
-
-.related-card {
-  background: #1f1f1f;
-  border-radius: 0;
-  overflow: hidden;
-  text-align: center;
-}
-
-.related-card:hover {
-  background: #2a2a2a;
-}
-
-.related-card img {
-  width: 100%;
-  height: auto;
-}
-
-.related-card h3 {
-  margin: 10px 6px 8px 6px;
-  font-size: 0.98em;
-  color: #ffcc00;
-}
-
-/* Simple navigation */
-nav {
-    background: #111;
-    padding: 12px;
-    text-align: center;
-}
-
-nav a {
-    color: #ffcc00;
-    margin: 0 15px;
+    background-color: #ccdbe1;
+    float: left;
+    height: 20px;
+    padding: 3px 7px 0;
+    color: #404041;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 14px
 }
 
-nav a:hover {
-    color: white;
+#pager ul li.sel a,#pager ul li a:hover {
+    color: #0072bc;
+    background-color: #fff
 }
 
- #content {
-      position: relative; 
- }
+#PagerFirst,#PagerBack,#PagerNext,#PagerLast {
+    background-image: url("sprites_v1.png");
+    _background-repeat: no-repeat;
+    _overflow: hidden;
+    display: inline-block;
+    width: 27px;
+    height: 23px
+}
 
+#PagerFirst {
+    background-position: 0 0;
+    width: 30px
+}
 
- #sidebar {
-      position: absolute;
-      background: #bac7cd; 
-      right: 0px;
-      top: 0px;
- }
+#PagerBack {
+    background-position: -31px 0
+}
+
+#PagerNext {
+    background-position: -59px 0
+}
+
+#PagerLast {
+    background-position: -87px 0;
+    width: 29px
+}
+
+#content {
+    overflow: visible;
+    height: 1250px
+}
+
+#main {
+    margin-left: 10px;
+    width: 816px;
+    _margin-left: 9px
+}
+
+.IndexTopListHeader {
+    width: 144px;
+    height: 20px;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    background-repeat: no-repeat
+}
+
+.IndexTopListHeader a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal
+}
+
+#IndexTopListHeaderMostPlayed {
+    background-color: #a6ce39;
+    position: relative
+}
+
+#IndexTopListHeaderMostPlayed:after {
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    background-image: url("sprites_v1.png");
+    _background-repeat: no-repeat;
+    _overflow: hidden;
+    background-position: 0 -114px;
+    width: 21px;
+    height: 18px
+}
+
+#IndexTopListHeaderTopRated {
+    background-color: #f58220;
+    position: relative
+}
+
+#IndexTopListHeaderTopRated:after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    background-image: url("sprites_v1.png");
+    _background-repeat: no-repeat;
+    _overflow: hidden;
+    background-position: 0 -94px;
+    width: 20px;
+    height: 19px
+}
+
+#IndexTopListHeaderMostCommented {
+    background-color: #ee3c23;
+    position: relative
+}
+
+#IndexTopListHeaderMostCommented:after {
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    background-image: url("sprites_v1.png");
+    _background-repeat: no-repeat;
+    _overflow: hidden;
+    background-position: 0 -154px;
+    width: 21px;
+    height: 20px
+}
+
+#IndexTopListHeaderWithScores {
+    background-color: #ee3c23;
+    position: relative
+}
+
+#IndexTopListHeaderWithScores:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    background-image: url("sprites_v1.png");
+    _background-repeat: no-repeat;
+    _overflow: hidden;
+    background-position: 0 -75px;
+    width: 18px;
+    height: 18px
+}
+
+#IndexTopListHeaderThreads {
+    background-color: #0072bc;
+    position: relative
+}
+
+#IndexTopListHeaderThreads:after {
+    content: "";
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    background-image: url("sprites_v1.png");
+    _background-repeat: no-repeat;
+    _overflow: hidden;
+    background-position: 0 -133px;
+    width: 17px;
+    height: 20px
+}
 
 #sidebar ol,#sidebar ul {
     width: 164px;
@@ -231,11 +291,11 @@ nav a:hover {
     list-style: disc
 }
 
-footer {
-    text-align: center;
-    color: #404041;
-    padding: 5px;
-    background: #ffffff;
-    font-size: 12px;
-    margin: 0px 0px 20px;
+#content.content-with-top #teaser {
+    top: 1306px
+}
+
+#content.content-with-top {
+    margin-top: 146px;
+    height: 1324px
 }
