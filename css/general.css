@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: : url('igre2.png');
+    background-image: url('igre2.png');
     color: #000;
     text-align: center;
     padding: 25px 20px;
