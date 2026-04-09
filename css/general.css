@@ -299,3 +299,36 @@
     margin-top: 146px;
     height: 1324px
 }
+
+#RecommendDialog {
+    display: none
+}
+
+#RecommendedGamesContainer h2 {
+    font-size: 11px;
+    color: #676f73;
+    text-align: center;
+    text-transform: uppercase
+}
+
+#RecommendedGamesContainer ul {
+    margin: 5px 0 0 0
+}
+
+#RecommendedGamesContainer ul li {
+    margin-top: 12px;
+    list-style: none;
+    text-align: center
+}
+
+#RecommendedGamesContainer img {
+    border: 1px solid #fff
+}
+
+#RecommendedGamesContainer a.txt {
+    font-size: 10px;
+    height: 22px;
+    line-height: 110%;
+    display: block;
+    overflow: hidden
+}
