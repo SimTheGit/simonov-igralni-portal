@@ -30,24 +30,20 @@ header p {
 }
 
 .Menu {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;        /* This centers the menu */
+    flex-wrap: wrap;  
+    border-radius: 5px;
     height: 34px;
-    float: left;
+    width: 898;
     padding-left: 10px;
     padding-right: 10px;
     background-color: #fff;
     font-weight: bold;
     font-size: 14px
-    display: flex;
-    justify-content: center;           /* Centers the menu items */
-    flex-wrap: wrap;                   /* Allows wrapping on small screens */
 }
 
 .Menu li {
-    float: left;
     list-style: none;
     text-align: center;
     padding-top: 5px;
