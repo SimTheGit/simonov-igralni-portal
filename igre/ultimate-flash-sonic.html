@@ -85,20 +85,12 @@ __wm.bt(775,27,25,2,"web","http://www.igre123.com/avanture-igre/igre-the-package
 				var swfUrl = swfEmbed = html5EmbedSrc = null;
 				var minFlashVersion = '10.2.0';
 				</script>
-				<div id="swf" style="width: 720px; height: 480px;">
-																	<ruffle-object type="application/x-shockwave-flash" data="https://raw.githubusercontent.com/SimTheGit/simonov-igralni-portal/main/151706_ultimate_sonic202c.swf" width="720" height="480" id="SwfFlashGameContainer" style="visibility: visible; width: 720px; height: 480px;"><param name="allowfullscreen" value="true"><param name="wmode" value="opaque"><param name="bgcolor" value="#BAC7CD"><param name="allowScriptAccess" value="always"><param name="flashvars" value="version=2&amp;foo=var"></ruffle-object>
-						<input type="hidden" id="HasVideoAd" value="0">
-												<script type="text/javascript">
-							var flashVars = {
-								version: 2,
-							};
-																						flashVars['foo'] = "var";
-																					
-														swfUrl = 'https://raw.githubusercontent.com/SimTheGit/simonov-igralni-portal/main/151706_ultimate_sonic202c.swf';
-														var swfWidth = '720';
-							var swfHeight = '480';
-						</script>
-									</div>
+				<object width="720" height="480" 
+        data="https://raw.githubusercontent.com/SimTheGit/simonov-igralni-portal/main/151706_ultimate_sonic202c.swf">
+    <param name="movie" value="https://raw.githubusercontent.com/SimTheGit/simonov-igralni-portal/main/151706_ultimate_sonic202c.swf">
+    <embed src="https://raw.githubusercontent.com/SimTheGit/simonov-igralni-portal/main/151706_ultimate_sonic202c.swf" 
+           width="720" height="480">
+</object>
 				<div id="description">Legendarni Sonic.</div>
 				<div id="voting">
 			<span id="VotesUpNum">846</span>
